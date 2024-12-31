@@ -31,4 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    window.onclick = (event) => {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+            const video = event.target.querySelector('lite-youtube');
+            if (video) {
+                const newVideo = video.cloneNode(true);
+                video.parentNode.replaceChild(newVideo, video);
+            }
+        }
+    };
 });
