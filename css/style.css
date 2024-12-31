@@ -200,17 +200,20 @@ a {
     margin: 15% auto; /* Margen superior e inferior automático y 15% desde los lados */
     padding: 20px;
     border: 1px solid #888;
-    width: 90%; /* Ancho del contenido del modal */
+    width: 70%; /* Ancho del contenido del modal */
     max-width: 1200px; /* Ancho máximo del contenido del modal */
-    iframe{
-        width: 100%;
+    .video{
+        width: 70%;
         height: 400px;
     }
 }
 .header-modal{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 10px;
+    gap: 10px;
     .close{
         text-align: center;
         padding: 20px;
